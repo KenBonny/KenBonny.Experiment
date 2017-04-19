@@ -1,15 +1,28 @@
-﻿using System.Linq;
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace KenBonny.Experiment.UnitTests
 {
-    public class ReadSpeedTest : IClassFixture<ListInitialisationFixture>
+    public class ReadSpeedTest : IClassFixture<ListInitialisationFixture>, IDisposable
     {
         private readonly ListInitialisationFixture _fixture;
+        private readonly ITestOutputHelper _output;
+        private readonly Stopwatch _stopwatch;
 
-        public ReadSpeedTest(ListInitialisationFixture fixture)
+        public ReadSpeedTest(ListInitialisationFixture fixture, ITestOutputHelper output)
         {
             _fixture = fixture;
+            _output = output;
+            _stopwatch = Stopwatch.StartNew();
+        }
+
+        public void Dispose()
+        {
+            _stopwatch.Stop();
+            _output.WriteLine("Total execution time: {0:c}", _stopwatch.Elapsed);
         }
 
         [Fact]
