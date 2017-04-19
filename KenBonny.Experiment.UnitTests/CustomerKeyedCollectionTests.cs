@@ -1,4 +1,3 @@
-using System;
 using KenBonny.Experiment.ExperimentalLibrary;
 using Xunit;
 
