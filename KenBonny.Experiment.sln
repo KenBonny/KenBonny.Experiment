@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KenBonny.Experiment.ExperimentalLibrary", "KenBonny.Experiment.ExperimentalLibrary\KenBonny.Experiment.ExperimentalLibrary.csproj", "{A5E31552-4DCE-4BB7-952B-196A520F8D70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KenBonny.Experiment.UnitTests", "KenBonny.Experiment.UnitTests\KenBonny.Experiment.UnitTests.csproj", "{0F13D2E2-C5F1-45E1-A2D5-55F130A186E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A5E31552-4DCE-4BB7-952B-196A520F8D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5E31552-4DCE-4BB7-952B-196A520F8D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5E31552-4DCE-4BB7-952B-196A520F8D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F13D2E2-C5F1-45E1-A2D5-55F130A186E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F13D2E2-C5F1-45E1-A2D5-55F130A186E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F13D2E2-C5F1-45E1-A2D5-55F130A186E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F13D2E2-C5F1-45E1-A2D5-55F130A186E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
