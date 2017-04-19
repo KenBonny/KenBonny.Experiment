@@ -26,28 +26,28 @@ namespace KenBonny.Experiment.UnitTests
         }
 
         [Fact]
-        public void Read_from_customers_list()
+        public void Read_from_CustomerList()
         {
             var customer = _fixture.CustomerList.First(c => c.Name == _fixture.RandomCustomer.Name);
             Assert.NotNull(customer);
         }
 
         [Fact]
-        public void Read_from_customers_collection()
+        public void Read_from_CustomerCollection()
         {
             var customer = _fixture.CustomerCollection.First(c => c.Name == _fixture.RandomCustomer.Name);
             Assert.NotNull(customer);
         }
 
         [Fact]
-        public void Read_from_customers_dictionary()
+        public void Read_from_CustomerDictionary()
         {
             var customer = _fixture.CustomerDictionary[_fixture.RandomCustomer.Name];
             Assert.NotNull(customer);
         }
 
         [Fact]
-        public void Read_from_customers_keyed_collection()
+        public void Read_from_CustomerKeyedCollection()
         {
             var customer = _fixture.CustomerKeyedCollection[_fixture.RandomCustomer.Name];
             Assert.NotNull(customer);
